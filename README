@@ -4,7 +4,11 @@ NAME
 SYNOPSIS
       use HTML::StripScripts::Parser;
 
-      my $hss = HTML::StripScripts::Parser->new({ Context => 'Document' });
+      my $hss = HTML::StripScripts::Parser->new(
+           { Context => 'Document' },
+           strict_comment => 1,
+           strict_names   => 1,
+      );
 
       $hss->parse_file("foo.html");
 
@@ -17,13 +21,20 @@ DESCRIPTION
     See HTML::StripScripts and HTML::Parser.
 
 CONSTRUCTORS
-    new ( CONFIG )
+    new ( CONFIG, [PARSER_OPTIONS] )
         Creates a new "HTML::StripScripts::Parser" object, and invokes the
         HTML::Parser init() method so that tags are fed to the correct
         HTML::StripScripts methods.
 
         The CONFIG parameter has the same semantics as the CONFIG parameter
         to the HTML::StripScripts constructor.
+
+        Any PARSER_OPTIONS supplied will be passed on to the HTML::Parser
+        init method, allowing you to influence the way the input is parsed.
+
+        You cannot use PARSER_OPTIONS to set HTML::Parser event handlers,
+        since "HTML::StripScripts::Parser" uses all of the event hooks
+        itself.
 
 METHODS
     See HTML::Parser for input methods, HTML::StripScripts for output

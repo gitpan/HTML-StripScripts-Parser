@@ -73,7 +73,6 @@ use vars qw(@tests);
   [ '>>',                q{>>}, q{&gt;&gt;} ],
   [ '< >',               q{< >}, q{&lt; &gt;} ],
   [ '</>',               q{</>}, q{&lt;/&gt;} ],
-  [ '<_foo>',            q{<_foo>}, q{&lt;_foo&gt;} ],
 
   [ 'nest pre',          q{<pre>foo<pre>bar}, q{<pre>foo</pre><pre>bar</pre>} ],
   [ 'nest pre with i',   q{<pre><i>foo<pre>bar}, q{<pre><i>foo</i></pre><pre>bar</pre>} ],
@@ -88,8 +87,6 @@ use vars qw(@tests);
 
   [ 'strip comment',     q{x<i>y<!-- hello -->foo}, q{x<i>y<!--filtered-->foo</i>} ],
   [ 'strip comment 2',   q{x<i>y<<!-- hello -->foo}, q{x<i>y&lt;<!--filtered-->foo</i>} ],
-  [ 'strip meta ?',      q{foo<?foo jibber>bar}, q{foo<!--filtered-->bar} ],
-  [ 'strip meta !',      q{foo<!foo jibber>bar}, q{foo&lt;!foo jibber&gt;bar} ],
   [ 'bare comment',      q{x<!-- hello -->y}, q{x<!--filtered-->y} ],
   [ 'SSI',               q{foo<!--# exec "/tmp/grunion" -->pah}, q{foo<!--filtered-->pah} ],
   [ 'SSI unclosed',      q{foo<!--# exec "/tmp/grunion"}, q{foo&lt;!--# exec &quot;/tmp/grunion&quot;} ],

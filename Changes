@@ -3,3 +3,11 @@
 
 0.02  31 Mar 2003  Removed misplaced =back in the POD.
 
+0.03  02 Oct 2003  Removed some fragile tests that depended on HTML::Parser
+                   parsing in a particular way.
+
+                   Added a workaround for HTML::Parser bug
+                   http://rt.cpan.org/NoAuth/Bug.html?id=3954
+
+0.04  02 Oct 2003  Added PARSER_OPTIONS to the init() method.
+
