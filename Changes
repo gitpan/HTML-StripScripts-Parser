@@ -14,3 +14,6 @@
 0.05  09 Dec 2003  Depend on HTML::Parser 3.25 or later, since we need the
                    end_document hook.
 
+0.06  09 Dec 2003  Removed some more tests that proved fragile with respect
+                   to HTML::Parser variations.
+
