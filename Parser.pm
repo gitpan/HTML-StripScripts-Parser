@@ -2,8 +2,8 @@ package HTML::StripScripts::Parser;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.01';
-# $Rev: 69 $
+$VERSION = '0.02';
+# $Rev: 75 $
 
 =head1 NAME
 
@@ -41,8 +41,6 @@ L<HTML::StripScripts> methods.
 
 The CONFIG parameter has the same semantics as the CONFIG
 parameter to the L<HTML::StripScripts> constructor.
-
-=back
 
 =cut
 
