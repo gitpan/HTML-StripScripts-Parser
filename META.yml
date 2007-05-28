@@ -1,0 +1,13 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         HTML-StripScripts-Parser
+version:      0.90
+version_from: Parser.pm
+installdirs:  site
+requires:
+    HTML::Parser:                  3.25
+    HTML::StripScripts:            0.9
+    Test::More:                    0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30

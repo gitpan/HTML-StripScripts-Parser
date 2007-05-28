@@ -5,9 +5,9 @@ BEGIN { $^W = 1 }
 use Test::More tests => 2;
 use HTML::StripScripts::Parser;
 
-my $filt = HTML::StripScripts::Parser->new({ Context => 'Document' });
+my $filt = HTML::StripScripts::Parser->new( { Context => 'Document' } );
 
-$filt->parse(<<END);
+is( $filt->filter_html(<<IN), <<OUT, 'scripts handled correctly' );
 <html>
  <head>
   <title>script test page</title>
@@ -16,10 +16,7 @@ $filt->parse(<<END);
   foo
  </body>
 </html>
-END
-$filt->eof;
-
-is( $filt->filtered_document, <<END, 'scripts handled correctly');
+IN
 <html>
  <head>
   <title>script test page</title>
@@ -28,10 +25,9 @@ is( $filt->filtered_document, <<END, 'scripts handled correctly');
   foo
  </body>
 </html>
-END
+OUT
 
-
-$filt->parse(<<END);
+is( $filt->filter_html(<<IN), <<OUT, 'scripts handled correctly' );
 <html>
  <head>
   <title>script test page</title>
@@ -50,10 +46,7 @@ $filt->parse(<<END);
   <b>baz</b>
  </body>
 </html>
-END
-$filt->eof;
-
-is( $filt->filtered_document, <<END, 'scripts handled correctly');
+IN
 <html>
  <head>
   <title>script test page</title>
@@ -65,5 +58,5 @@ is( $filt->filtered_document, <<END, 'scripts handled correctly');
   <b>baz</b>
  </body>
 </html>
-END
+OUT
 

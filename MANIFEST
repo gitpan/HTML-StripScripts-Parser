@@ -6,3 +6,5 @@ Parser.pm
 t/10basic.t
 t/20script.t
 t/50flow.t
+t/70xss.t
+META.yml                                 Module meta-data (added by MakeMaker)
