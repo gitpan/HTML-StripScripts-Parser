@@ -2,7 +2,7 @@ package HTML::StripScripts::Parser;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.90';
+$VERSION = '0.99';
 
 =head1 NAME
 

@@ -1,6 +1,6 @@
-0.90  28 May 2007  Added the filter_html() method
+0.99  28 May 2007  Added the filter_html() method
                    Added the XSS tests from http://ha.ckers.org/xss.html
-                   Now requires HTML::StripScripts v 0.90
+                   Now requires HTML::StripScripts v 0.99
 
 0.06  09 Dec 2003  Removed some more tests that proved fragile with respect
                    to HTML::Parser variations.
