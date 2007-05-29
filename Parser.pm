@@ -2,7 +2,7 @@ package HTML::StripScripts::Parser;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.99';
+$VERSION = '0.991';
 
 =head1 NAME
 
@@ -38,9 +38,8 @@ This class provides an easy interface to C<HTML::StripScripts>, using
 C<HTML::Parser> to parse the HTML.
 
 See L<HTML::Parser> for details of how to customise how the raw HTML is parsed
-into tags,
-and L<HTML::StripScripts> for details of how to customise the way those tags are
-filtered.
+into tags, and L<HTML::StripScripts> for details of how to customise the way
+those tags are filtered.
 
 =cut
 
@@ -118,7 +117,7 @@ C<HTML::Parser::eof()> and C<HTML::StripScripts::filtered_document()>.
 #===================================
 sub filter_html {
 #===================================
-    my ($self,$html) = @_;
+    my ( $self, $html ) = @_;
     $self->parse($html);
     $self->eof;
     return $self->filtered_document;
@@ -149,6 +148,8 @@ E<lt>clint@traveljury.comE<gt>
 Copyright (C) 2003 Nick Cleaton.  All Rights Reserved.
 
 Copyright (C) 2007 Clinton Gormley.  All Rights Reserved.
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
