@@ -1,6 +1,9 @@
+1.00   5 Jun 2007  Passed all CPAN tests - bumped version
+
 0.991 29 May 2007  Fixed some Kwalitee issues:
                      - improved META.yml
                      - added Test::Pod and Test::Pod::Coverage tests
+
 0.99  28 May 2007  Added the filter_html() method
                    Added the XSS tests from http://ha.ckers.org/xss.html
                    Now requires HTML::StripScripts v 0.99
