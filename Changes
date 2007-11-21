@@ -1,3 +1,7 @@
+1.01  21 Nov 2007  Made minimum required version of HTML::Parser 3.56
+                   because of some parsing bugs in previous versions
+                   of that module
+
 1.00   5 Jun 2007  Passed all CPAN tests - bumped version
 
 0.991 29 May 2007  Fixed some Kwalitee issues:

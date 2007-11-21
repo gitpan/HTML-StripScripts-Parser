@@ -1,12 +1,12 @@
 --- #YAML:1.0
 name:                HTML-StripScripts-Parser
-version:             1.00
+version:             1.01
 abstract:            XSS filter using HTML::Parser
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.32
 distribution_type:   module
 requires:     
-    HTML::Parser:                  3.25
+    HTML::Parser:                  3.56
     HTML::StripScripts:            0.991
     Test::More:                    0
 meta-spec:

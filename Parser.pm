@@ -2,7 +2,7 @@ package HTML::StripScripts::Parser;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 =head1 NAME
 
@@ -134,7 +134,16 @@ See L<HTML::StripScripts/"SUBCLASSING"> and L<HTML::Parser/"SUBCLASSING">.
 
 =head1 SEE ALSO
 
-L<HTML::StripScripts>, L<HTML::Parser>
+L<HTML::StripScripts>, L<HTML::Parser>, L<HTML::StripScripts::LibXML>
+
+=head1 BUGS
+
+None reported.
+
+Please report any bugs or feature requests to
+bug-html-stripscripts-parser@rt.cpan.org, or through the web interface at
+L<http://rt.cpan.org>.
+
 
 =head1 AUTHOR
 

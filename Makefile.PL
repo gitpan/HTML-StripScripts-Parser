@@ -9,7 +9,7 @@ WriteMakefile(
     'PREREQ_PM'    => {
                         'Test::More'         => 0,
                         'HTML::StripScripts' => 0.991,
-                        'HTML::Parser'       => 3.25,
+                        'HTML::Parser'       => 3.56,
                       },
     $ExtUtils::MakeMaker::VERSION >= 6.31
     ? ( 'LICENSE' => 'perl' )
