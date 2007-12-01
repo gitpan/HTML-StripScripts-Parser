@@ -1,3 +1,5 @@
+1.02   1 Dec 2007  Made minimum required version of HTML::StripScripts 1.04
+                   because of a bug in previous versions
 1.01  21 Nov 2007  Made minimum required version of HTML::Parser 3.56
                    because of some parsing bugs in previous versions
                    of that module
