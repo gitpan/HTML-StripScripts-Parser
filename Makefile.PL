@@ -8,7 +8,7 @@ WriteMakefile(
         . ' Clinton Gormley <clint@traveljury.com>',
     'PREREQ_PM'    => {
                         'Test::More'         => 0,
-                        'HTML::StripScripts' => 1.04,
+                        'HTML::StripScripts' => 1.05,
                         'HTML::Parser'       => 3.56,
                       },
     $ExtUtils::MakeMaker::VERSION >= 6.31
